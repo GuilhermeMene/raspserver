@@ -10,7 +10,7 @@ port = 53
 def logger(message):
     print(message)
     with open('connection.log', "a") as file:
-        file.write(message)
+        file.write(message + "\n")
     file.close()
 
 def isConnected(hostname, port):
